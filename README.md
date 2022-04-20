@@ -15,9 +15,10 @@ Converts markdown into plain text
 `$ python -m strip_markdown MD_fn [TXT_fn]`
 
 ### Library
+```python
+>>> import strip_markdown
+>>> TXT = strip_markdown.strip_markdown(MD)
+>>> strip_markdown.strip_markdown_file(MD_fn, [TXT_fn])
 ```
-import strip_markdown
 
-TXT = strip_markdown.strip_markdown(MD)
-strip_markdown.strip_markdown_file(MD_fn, [TXT_fn])
-```
+* [TXT_fn] is optional: default is <MD_fn>.md -> <MD_fn>.txt
