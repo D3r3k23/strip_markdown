@@ -3,7 +3,7 @@
 [![PyPI](https://badge.fury.io/py/strip_markdown.svg)](https://pypi.org/project/strip_markdown)
 [![ci](https://github.com/D3r3k23/strip_markdown/actions/workflows/ci.yaml/badge.svg)](https://github.com/D3r3k23/strip_markdown/actions/workflows/ci.yaml)
 
-#### Converts markdown into plain text
+#### Converts markdown to plain text, including both a command line interface and importable package
 
 ## Installation
 
@@ -21,4 +21,4 @@
 >>> strip_markdown.strip_markdown_file(MD_fn, [TXT_fn])
 ```
 
-* `TXT_fn` is optional: default is `<MD_fn>.md` -> `<MD_fn>.txt`
+* `TXT_fn` is optional: default is `<MD_fn>.md -> <MD_fn>.txt`
