@@ -1,4 +1,4 @@
-name: strip_markdown
+name: ci
 
 on:
   push:
