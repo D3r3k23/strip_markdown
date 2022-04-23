@@ -8,31 +8,31 @@
 ## Example
 
 ### Markdown
+---
 # Title
 
-### Section
+## Section
 Block of text **with bold section**
-
 ---
 
 ### Markdown source
+---
 ```
 # Title
 
-### Section
+## Section
 Block of text **with bold section**
 ```
-
 ---
 
 ### Text
+---
 ```
 Title
 
 Section
 Block of text with bold section
 ```
-
 ---
 
 ## Installation
