@@ -12,7 +12,9 @@
 # Title
 
 ## Section
+
 Text
+
 **Bold text**
 ---
 
@@ -22,7 +24,9 @@ Text
 # Title
 
 ## Section
+
 Text
+
 **Bold text**
 ```
 ---
@@ -33,7 +37,9 @@ Text
 Title
 
 Section
+
 Text
+
 Bold text
 ```
 ---
