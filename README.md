@@ -13,7 +13,7 @@
 
 ## Section
 
-Text
+This is a line of text
 
 **Bold text**
 
@@ -26,10 +26,9 @@ Text
 
 ## Section
 
-Text
+This is a line of text
 
 **Bold text**
-
 ```
 ---
 
@@ -37,11 +36,8 @@ Text
 ---
 ```
 Title
-
 Section
-
-Text
-
+This is a line of text
 Bold text
 ```
 ---
