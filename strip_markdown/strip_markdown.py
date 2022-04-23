@@ -25,6 +25,8 @@ def strip_markdown_file(markdown_fn: str, text_fn: Optional[str]=None):
 
     if text_fn is None:
         text_fn = str(Path(markdown_fn).with_suffix('.txt'))
+    elif os.path.isdir(text_fn):
+        text_fn = os.path.join(text_fn, str(Path(markdown_fn).with_suffix('.txt').name))
     else:
         text_path = Path(text_fn).resolve()
         if not text_path.parent.is_dir():

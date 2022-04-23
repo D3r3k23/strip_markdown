@@ -22,4 +22,5 @@
 >>> strip_markdown.strip_markdown_file(MD_fn: str, TXT_fn: Optional[str])
 ```
 
-`TXT_fn` is optional: default is `<MD_fn>.md -> <MD_fn>.txt`
+* `TXT_fn` is optional: default is `<MD_fn>.md -> <MD_fn>.txt`
+* If `TXT_fn` is a directory, `<MD_fn>.txt` is placed in the directory
