@@ -11,7 +11,8 @@
 ---
 # Title
 
-### Section
+## Section
+
 Block of text **with bold section**
 ---
 
@@ -20,7 +21,8 @@ Block of text **with bold section**
 ```
 # Title
 
-### Section
+## Section
+
 Block of text **with bold section**
 ```
 ---
@@ -31,6 +33,7 @@ Block of text **with bold section**
 Title
 
 Section
+
 Block of text with bold section
 ```
 ---
