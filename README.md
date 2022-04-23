@@ -16,6 +16,7 @@
 Text
 
 **Bold text**
+
 ---
 
 ### Markdown source
@@ -28,6 +29,7 @@ Text
 Text
 
 **Bold text**
+
 ```
 ---
 
