@@ -5,6 +5,47 @@
 
 #### Converts markdown to plain text, including both a command line interface and importable library
 
+## Example
+
+### Markdown
+---
+# Title
+
+## Section
+
+Text
+
+**Bold text**
+
+---
+
+### Markdown source
+---
+```
+# Title
+
+## Section
+
+Text
+
+**Bold text**
+
+```
+---
+
+### Text
+---
+```
+Title
+
+Section
+
+Text
+
+Bold text
+```
+---
+
 ## Installation
 
 `$ pip install strip_markdown`
