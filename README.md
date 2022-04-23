@@ -7,27 +7,35 @@
 
 ## Example
 
-#### Markdown
+---
+
+### Markdown
 # Title
 
 ### Section
 Block of text **with bold section**
 
-#### Markdown source
+---
+
+### Markdown source
 ```
 # Title
 
 ### Section
 Block of text **with bold section**
+
+---
 ```
 
-#### Text
+### Text
 ```
 Title
 
 Section
 Block of text with bold section
 ```
+
+---
 
 ## Installation
 
