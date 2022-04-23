@@ -11,9 +11,9 @@
 ---
 # Title
 
-### Section
-
-Block of text **with bold section**
+## Section
+Text
+**Bold text**
 ---
 
 ### Markdown source
@@ -21,9 +21,9 @@ Block of text **with bold section**
 ```
 # Title
 
-### Section
-
-Block of text **with bold section**
+## Section
+Text
+**Bold text**
 ```
 ---
 
@@ -33,8 +33,8 @@ Block of text **with bold section**
 Title
 
 Section
-
-Block of text with bold section
+Text
+Bold text
 ```
 ---
 
