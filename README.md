@@ -60,4 +60,4 @@ Bold text
 ```
 
 * `TXT_fn` is optional: default is `<MD_fn>.md -> <MD_fn>.txt`
-* If `TXT_fn` is a directory, `<MD_fn>.txt` is placed in the directory
+* If `TXT_fn` is a directory, `<MD_fn>.txt` is placed in that directory
