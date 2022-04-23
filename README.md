@@ -7,8 +7,6 @@
 
 ## Example
 
----
-
 ### Markdown
 # Title
 
@@ -23,9 +21,9 @@ Block of text **with bold section**
 
 ### Section
 Block of text **with bold section**
+```
 
 ---
-```
 
 ### Text
 ```
