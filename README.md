@@ -8,6 +8,12 @@
 ## Example
 
 #### Markdown
+# Title
+
+### Section
+Block of text **with bold section**
+
+#### Markdown source
 ```
 # Title
 
