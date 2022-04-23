@@ -7,7 +7,7 @@
 
 ## Example
 
-### Markdown
+#### Markdown
 ```
 # Title
 
@@ -15,7 +15,7 @@
 Block of text **with bold section**
 ```
 
-### Text
+#### Text
 ```
 Title
 
