@@ -1,6 +1,5 @@
 from typing import *
 from pathlib import Path
-import os
 
 import markdown
 from bs4 import BeautifulSoup
@@ -28,7 +27,7 @@ def strip_markdown_file(markdown_fn: Path, text_fn: Optional[Path]=None):
     elif text_fn.is_dir():
         text_fn = Path(text_fn) / markdown_fn.stem.with_suffix('.txt')
     elif text_fn.parent != Path('.') and not text_fn.resolve().parent.is_dir():
-        os.makedirs(text_fn.parent)
+        text_fn.parent.mkdir(parents=True)
 
     _write_file(text_fn, text)
 
