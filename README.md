@@ -56,7 +56,7 @@ Bold text
 >>> import strip_markdown
 >>>
 >>> TXT: str = strip_markdown.strip_markdown(MD: str)
->>> strip_markdown.strip_markdown_file(MD_fn: str, TXT_fn: Optional[str])
+>>> strip_markdown.strip_markdown_file(MD_fn: Path, TXT_fn: Optional[Path])
 ```
 
 * `TXT_fn` is optional: default is `<MD_fn>.md -> <MD_fn>.txt`
