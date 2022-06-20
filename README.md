@@ -1,7 +1,6 @@
 # strip_markdown
-
-[![PyPI](https://badge.fury.io/py/strip_markdown.svg)](https://pypi.org/project/strip_markdown)
-[![ci](https://github.com/D3r3k23/strip_markdown/actions/workflows/ci.yaml/badge.svg)](https://github.com/D3r3k23/strip_markdown/actions/workflows/ci.yaml)
+[![PyPI](https://img.shields.io/pypi/v/strip_markdown?style=for-the-badge)](https://pypi.org/project/strip_markdown)
+[![ci](https://img.shields.io/github/workflow/status/D3r3k23/strip_markdown/ci?label=ci&style=for-the-badge)](https://github.com/D3r3k23/strip_markdown/actions/workflows/ci.yaml)
 
 #### Converts markdown to plain text, including both a command line interface and importable library
 
@@ -60,4 +59,4 @@ Bold text
 ```
 
 * `TXT_fn` is optional: default is `<MD_fn>.md -> <MD_fn>.txt`
-* If `TXT_fn` is a directory, `<MD_fn>.txt` is placed in the directory
+* If `TXT_fn` is a directory, `<MD_fn>.txt` is placed in that directory
