@@ -1,21 +1,20 @@
 from typing import *
 from pathlib import Path
-import argparse
+from argparse import ArgumentParser
 import sys
 
 from strip_markdown import *
 
 def main() -> Optional[int]:
     parser = argparse.ArgumentParser(description='Converts markdown file to plain text')
-    parser.add_argument('md',  type=Path, help='markdown input file')
-    parser.add_argument('txt', type=Path, help='text output file', nargs='?', default='')
+    parser.add_argument('md',  type=str, help='markdown input file')
+    parser.add_argument('txt', type=str, help='text output file', nargs='?', default='')
     args = parser.parse_args()
 
+    md_path = args.md
+    txt_path = args.txt if len(args.txt) > 0 else None
     try:
-        if len(args.txt) > 0:
-            strip_markdown_file(args.md, args.txt)
-        else:
-            strip_markdown_file(args.md)
+        strip_markdown_file(md_path, txt_path)
     except MarkdownError as e:
         print(f'Error: {e}')
         return 1

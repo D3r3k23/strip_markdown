@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 class MarkdownError(Exception):
     pass
 
-def strip_markdown(md: str) -> str:
+def strip_markdown(md: str) -> Optional[str]:
     html = markdown.markdown(md)
     soup = BeautifulSoup(html, features='html.parser')
     return soup.get_text()
@@ -21,6 +21,8 @@ def strip_markdown_file(markdown_fn: Path, text_fn: Optional[Path]=None):
         raise MarkdownError(f'Could not load {markdown_fn}')
 
     text = strip_markdown(markdown_src)
+    if text is None:
+        raise MarkdownError(f'Could not convert to text')
 
     if text_fn is None:
         text_fn = markdown_fn.with_suffix('.txt')
@@ -33,16 +35,15 @@ def strip_markdown_file(markdown_fn: Path, text_fn: Optional[Path]=None):
 
 def _read_file(filename: Path) -> Optional[str]:
     try:
-        with open(filename, 'r') as f:
+        with filename.open('r') as f:
             return f.read()
     except (OSError, IOError):
         return None
 
 def _write_file(filename: Path, text: str) -> bool:
     try:
-        with open(filename, 'w') as f:
+        with filename.open('w') as f:
             f.write(text)
+        return True
     except (OSError, IOError):
         return False
-    else:
-        return True
