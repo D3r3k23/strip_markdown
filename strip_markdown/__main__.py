@@ -6,7 +6,7 @@ import sys
 from strip_markdown import *
 
 def main() -> Optional[int]:
-    parser = argparse.ArgumentParser(description='Converts markdown file to plain text')
+    parser = ArgumentParser(description='Converts markdown file to plain text')
     parser.add_argument('md',  type=str, help='markdown input file')
     parser.add_argument('txt', type=str, help='text output file', nargs='?', default='')
     args = parser.parse_args()
